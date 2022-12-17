@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/> 
+		<title>Lab 6 Film Director Filmographies</title>
+		<link href="style.css" type="text/css" rel="stylesheet" />
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+		<script type="text/javascript" src="main.js"></script>	 
+
+   	</head>
+   	<body>
+   		<h4>Do film directors get better at making movies, making money, both, or neither?</h4>
+   		<br />
+   		<br />
+		<div id="title"></div>
+	   	<div id="wrapper" class="hidden">
+			<div>
+				<label for="categorySelect">Director: </label>
+				<select class="custom-select" id="categorySelect" onchange="onCategoryChanged()">
+				  <option selected value="All">All</option>
+				  <option value="Adam McKay">Adam McKay</option>
+				  <option value="Alfonso Cuarón">Alfonso Cuarón</option>
+				  <option value="Ang Lee">Ang Lee</option>
+				  <option value="Bong Joon-Ho">Bong Joon-Ho</option>
+				  <option value="Brad Bird">Brad Bird</option>
+				  <option value="Chris Columbus">Chris Columbus</option>
+				  <option value="Christopher Nolan">Christopher Nolan</option>
+				  <option value="Danny Boyle">Danny Boyle</option>
+				  <option value="Darren Aronofsky">Darren Aronofsky</option>
+				  <option value="David Fincher">David Fincher</option>
+				  <option value="David Lynch">David Lynch</option>
+				  <option value="David O. Russell">David O. Russell</option>
+				  <option value="Denis Villeneuve">Denis Villeneuve</option>
+				  <option value="Edgar Wright">Edgar Wright</option>
+				  <option value="Gore Verbinski">Gore Verbinski</option>
+				  <option value="Guillermo del Toro">Guillermo del Toro</option>
+				  <option value="Gus Van Sant">Gus Van Sant</option>
+				  <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+				  <option value="James Cameron">James Cameron</option>
+				  <option value="James Wan">James Wan</option>
+				  <option value="Joel & Ethan Coen">Joel & Ethan Coen</option>
+				  <option value="Kathryn Bigelow">Kathryn Bigelow</option>
+				  <option value="M. Night Shyamalan">M. Night Shyamalan</option>
+				  <option value="Martin Scorsese">Martin Scorsese</option>
+				  <option value="Michael Bay">Michael Bay</option>
+				  <option value="Oliver Stone">Oliver Stone</option>
+				  <option value="Paul Thomas Anderson">Paul Thomas Anderson</option>
+				  <option value="Peter Jackson">Peter Jackson</option>
+				  <option value="Quentin Tarantino">Quentin Tarantino</option>
+				  <option value="Richard Linklater">Richard Linklater</option>
+				  <option value="Ridley Scott">Ridley Scott</option>
+				  <option value="Rob Reiner">Rob Reiner</option>
+				  <option value="Robert Zemeckis">Robert Zemeckis</option>
+				  <option value="Ron Howard">Ron Howard</option>
+				  <option value="Sam Mendes">Sam Mendes</option>
+				  <option value="Sam Raimi">Sam Raimi</option>
+				  <option value="Sofia Coppola">Sofia Coppola</option>
+				  <option value="Spike Lee">Spike Lee</option>
+				  <option value="Steven Soderbergh">Steven Soderbergh</option>
+				  <option value="Steven Spielberg">Steven Spielberg</option>
+				  <option value="Taika Waititi">Taika Waititi</option>
+				  <option value="Tim Burton">Tim Burton</option>
+				  <option value="Todd Haynes">Todd Haynes</option>
+				  <option value="Tyler Perry">Tyler Perry</option>
+				  <option value="Wes Anderson">Wes Anderson</option>
+				  <option value="Wes Craven">Wes Craven</option>
+				  <option value="Wong Kar-Wai">Wong Kar-Wai</option>
+				  <option value="Woody Allen">Woody Allen</option>
+				</select>
+			</div>
+			<div id="chart1">
+
+	    	</div>
+			<div id="chart2">
+
+			</div>
+		  	<div id="chart3">
+
+	        </div>
+	   	</div>
+	</body>
+</html>
+
